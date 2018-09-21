@@ -24,7 +24,7 @@ namespace ChatBotApplication.Dialogs
 
         private async Task MessageReceivedAsync(IDialogContext context, IAwaitable<object> result)
         {
-            await context.PostAsync($"Bot is running");
+           
             MessagesController obj = new MessagesController();
             var activity = await result as Activity;
             PatientController pC = new PatientController();
@@ -304,8 +304,8 @@ namespace ChatBotApplication.Dialogs
                 }
             }
             if (questionResponded == false)
-            {
-                await context.PostAsync($"Sorry, Cannot process this input at the moment.");
+            { await context.PostAsync($"Bot is running");
+               // await context.PostAsync($"Sorry, Cannot process this input at the moment.");
 
             }
 
