@@ -1,0 +1,365 @@
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\ChatBotApplication.dll.config
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\ChatBotApplication.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\ChatBotApplication.pdb
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Autofac.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Chronic.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\EntityFramework.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\EntityFramework.SqlServer.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.Azure.Documents.Client.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.Bot.Builder.Autofac.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.Bot.Builder.Azure.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.Bot.Builder.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.Bot.Builder.History.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.Bot.Connector.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.Data.Edm.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.Data.OData.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.Data.Services.Client.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.IdentityModel.Protocols.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.Rest.ClientRuntime.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Newtonsoft.Json.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\System.Net.Http.Formatting.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\System.Spatial.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\System.Web.Cors.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\System.Web.Http.Cors.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\System.Web.Http.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\System.Web.Http.WebHost.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Autofac.xml
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\EntityFramework.xml
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\EntityFramework.SqlServer.xml
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.Azure.Documents.Client.xml
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.Azure.KeyVault.Core.xml
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.Bot.Builder.pdb
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.Bot.Builder.xml
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.Bot.Builder.Autofac.pdb
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.Bot.Builder.Autofac.xml
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.Bot.Builder.Azure.pdb
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.Bot.Builder.Azure.xml
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.Bot.Builder.History.pdb
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.Bot.Builder.History.xml
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.Bot.Connector.xml
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.Data.Edm.xml
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.Data.OData.xml
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.Data.Services.Client.xml
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.IdentityModel.Protocols.xml
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.Rest.ClientRuntime.xml
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\Newtonsoft.Json.xml
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\System.Net.Http.Formatting.xml
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\System.Spatial.xml
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\System.Web.Http.xml
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\System.Web.Http.Cors.xml
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\System.Web.Http.WebHost.xml
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\ar\Microsoft.Bot.Builder.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\cs\Microsoft.Bot.Builder.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\de-dE\Microsoft.Bot.Builder.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\el\Microsoft.Bot.Builder.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\en\Microsoft.Bot.Builder.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\es\Microsoft.Bot.Builder.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\fa\Microsoft.Bot.Builder.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\fr\Microsoft.Bot.Builder.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\it\Microsoft.Bot.Builder.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\ja\Microsoft.Bot.Builder.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\nl\Microsoft.Bot.Builder.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\pt-BR\Microsoft.Bot.Builder.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\ru\Microsoft.Bot.Builder.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\de\System.Spatial.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\es\System.Spatial.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\fr\System.Spatial.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\it\System.Spatial.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\ja\System.Spatial.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\ko\System.Spatial.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\ru\System.Spatial.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\obj\Debug\ChatBotApplication.dll
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\obj\Debug\ChatBotApplication.pdb
+C:\Users\akash.m\Documents\Visual Studio 2015\Projects\ChatBotApplication\ChatBotApplication\obj\Debug\ChatBotApplication.csprojResolveAssemblyReference.cache
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\ChatBotApplication.dll.config
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\ChatBotApplication.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\ChatBotApplication.pdb
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Autofac.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Chronic.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\EntityFramework.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\EntityFramework.SqlServer.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.Azure.AppService.ApiApps.Service.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.Azure.Documents.Client.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.Azure.KeyVault.Core.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.Bot.Builder.Autofac.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.Bot.Builder.Azure.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.Bot.Builder.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.Bot.Builder.History.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.Bot.Connector.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.Data.Edm.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.Data.OData.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.Data.Services.Client.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.IdentityModel.Logging.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.IdentityModel.Protocols.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.IdentityModel.Tokens.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.Rest.ClientRuntime.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.Web.Infrastructure.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.WindowsAzure.Storage.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Newtonsoft.Json.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Swashbuckle.Core.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\System.Net.Http.Formatting.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\System.Spatial.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\System.Web.Cors.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\System.Web.Http.Cors.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\System.Web.Http.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\System.Web.Http.WebHost.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\WebActivatorEx.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Autofac.xml
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\EntityFramework.xml
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\EntityFramework.SqlServer.xml
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.Azure.Documents.Client.xml
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.Azure.KeyVault.Core.xml
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.Bot.Builder.pdb
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.Bot.Builder.xml
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.Bot.Builder.Autofac.pdb
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.Bot.Builder.Autofac.xml
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.Bot.Builder.Azure.pdb
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.Bot.Builder.Azure.xml
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.Bot.Builder.History.pdb
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.Bot.Builder.History.xml
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.Bot.Connector.xml
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.Data.Edm.xml
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.Data.OData.xml
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.Data.Services.Client.xml
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.IdentityModel.Logging.xml
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.IdentityModel.Protocols.xml
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.IdentityModel.Tokens.xml
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.Rest.ClientRuntime.xml
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.WindowsAzure.Configuration.xml
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.WindowsAzure.Storage.pdb
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Microsoft.WindowsAzure.Storage.xml
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\Newtonsoft.Json.xml
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\System.Net.Http.Formatting.xml
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\System.Spatial.xml
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\System.Web.Http.xml
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\System.Web.Http.Cors.xml
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\System.Web.Http.WebHost.xml
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\ar\Microsoft.Bot.Builder.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\cs\Microsoft.Bot.Builder.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\de-dE\Microsoft.Bot.Builder.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\el\Microsoft.Bot.Builder.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\en\Microsoft.Bot.Builder.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\es\Microsoft.Bot.Builder.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\fa\Microsoft.Bot.Builder.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\fr\Microsoft.Bot.Builder.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\it\Microsoft.Bot.Builder.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\ja\Microsoft.Bot.Builder.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\nl\Microsoft.Bot.Builder.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\pt-BR\Microsoft.Bot.Builder.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\ru\Microsoft.Bot.Builder.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\de\Microsoft.Data.Edm.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\es\Microsoft.Data.Edm.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\it\Microsoft.Data.Edm.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\de\Microsoft.Data.OData.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\es\Microsoft.Data.OData.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\fr\Microsoft.Data.OData.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\it\Microsoft.Data.OData.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\ja\Microsoft.Data.OData.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\ko\Microsoft.Data.OData.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\ru\Microsoft.Data.OData.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\de\Microsoft.Data.Services.Client.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\es\Microsoft.Data.Services.Client.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\fr\Microsoft.Data.Services.Client.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\it\Microsoft.Data.Services.Client.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\ja\Microsoft.Data.Services.Client.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\ko\Microsoft.Data.Services.Client.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\ru\Microsoft.Data.Services.Client.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\de\System.Spatial.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\es\System.Spatial.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\fr\System.Spatial.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\it\System.Spatial.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\ja\System.Spatial.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\ko\System.Spatial.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\ru\System.Spatial.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\zh-Hans\System.Spatial.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\bin\zh-Hant\System.Spatial.resources.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\obj\Debug\ChatBotApplication.dll
+D:\ADSM\ChatBotApplication\ChatBotApplication\obj\Debug\ChatBotApplication.pdb
+D:\ADSM\ChatBotApplication\ChatBotApplication\obj\Debug\ChatBotApplication.csprojResolveAssemblyReference.cache
+D:\ChatBot\ChatBotApplication\bin\ChatBotApplication.dll.config
+D:\ChatBot\ChatBotApplication\bin\ChatBotApplication.dll
+D:\ChatBot\ChatBotApplication\bin\ChatBotApplication.pdb
+D:\ChatBot\ChatBotApplication\bin\Autofac.dll
+D:\ChatBot\ChatBotApplication\bin\Chronic.dll
+D:\ChatBot\ChatBotApplication\bin\EntityFramework.dll
+D:\ChatBot\ChatBotApplication\bin\EntityFramework.SqlServer.dll
+D:\ChatBot\ChatBotApplication\bin\Microsoft.Azure.AppService.ApiApps.Service.dll
+D:\ChatBot\ChatBotApplication\bin\Microsoft.Azure.Documents.Client.dll
+D:\ChatBot\ChatBotApplication\bin\Microsoft.Azure.KeyVault.Core.dll
+D:\ChatBot\ChatBotApplication\bin\Microsoft.Bot.Builder.Autofac.dll
+D:\ChatBot\ChatBotApplication\bin\Microsoft.Bot.Builder.Azure.dll
+D:\ChatBot\ChatBotApplication\bin\Microsoft.Bot.Builder.dll
+D:\ChatBot\ChatBotApplication\bin\Microsoft.Bot.Builder.History.dll
+D:\ChatBot\ChatBotApplication\bin\Microsoft.Bot.Connector.dll
+D:\ChatBot\ChatBotApplication\bin\Microsoft.Data.Edm.dll
+D:\ChatBot\ChatBotApplication\bin\Microsoft.Data.OData.dll
+D:\ChatBot\ChatBotApplication\bin\Microsoft.Data.Services.Client.dll
+D:\ChatBot\ChatBotApplication\bin\Microsoft.IdentityModel.Logging.dll
+D:\ChatBot\ChatBotApplication\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+D:\ChatBot\ChatBotApplication\bin\Microsoft.IdentityModel.Protocols.dll
+D:\ChatBot\ChatBotApplication\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\ChatBot\ChatBotApplication\bin\Microsoft.IdentityModel.Tokens.dll
+D:\ChatBot\ChatBotApplication\bin\Microsoft.Rest.ClientRuntime.dll
+D:\ChatBot\ChatBotApplication\bin\Microsoft.Web.Infrastructure.dll
+D:\ChatBot\ChatBotApplication\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\ChatBot\ChatBotApplication\bin\Microsoft.WindowsAzure.Storage.dll
+D:\ChatBot\ChatBotApplication\bin\Newtonsoft.Json.dll
+D:\ChatBot\ChatBotApplication\bin\Swashbuckle.Core.dll
+D:\ChatBot\ChatBotApplication\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\ChatBot\ChatBotApplication\bin\System.Net.Http.Formatting.dll
+D:\ChatBot\ChatBotApplication\bin\System.Spatial.dll
+D:\ChatBot\ChatBotApplication\bin\System.Web.Cors.dll
+D:\ChatBot\ChatBotApplication\bin\System.Web.Http.Cors.dll
+D:\ChatBot\ChatBotApplication\bin\System.Web.Http.dll
+D:\ChatBot\ChatBotApplication\bin\System.Web.Http.WebHost.dll
+D:\ChatBot\ChatBotApplication\bin\WebActivatorEx.dll
+D:\ChatBot\ChatBotApplication\bin\Autofac.xml
+D:\ChatBot\ChatBotApplication\bin\EntityFramework.xml
+D:\ChatBot\ChatBotApplication\bin\EntityFramework.SqlServer.xml
+D:\ChatBot\ChatBotApplication\bin\Microsoft.Azure.Documents.Client.xml
+D:\ChatBot\ChatBotApplication\bin\Microsoft.Azure.KeyVault.Core.xml
+D:\ChatBot\ChatBotApplication\bin\Microsoft.Bot.Builder.pdb
+D:\ChatBot\ChatBotApplication\bin\Microsoft.Bot.Builder.xml
+D:\ChatBot\ChatBotApplication\bin\Microsoft.Bot.Builder.Autofac.pdb
+D:\ChatBot\ChatBotApplication\bin\Microsoft.Bot.Builder.Autofac.xml
+D:\ChatBot\ChatBotApplication\bin\Microsoft.Bot.Builder.Azure.pdb
+D:\ChatBot\ChatBotApplication\bin\Microsoft.Bot.Builder.Azure.xml
+D:\ChatBot\ChatBotApplication\bin\Microsoft.Bot.Builder.History.pdb
+D:\ChatBot\ChatBotApplication\bin\Microsoft.Bot.Builder.History.xml
+D:\ChatBot\ChatBotApplication\bin\Microsoft.Bot.Connector.xml
+D:\ChatBot\ChatBotApplication\bin\Microsoft.Data.Edm.xml
+D:\ChatBot\ChatBotApplication\bin\Microsoft.Data.OData.xml
+D:\ChatBot\ChatBotApplication\bin\Microsoft.Data.Services.Client.xml
+D:\ChatBot\ChatBotApplication\bin\Microsoft.IdentityModel.Logging.xml
+D:\ChatBot\ChatBotApplication\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+D:\ChatBot\ChatBotApplication\bin\Microsoft.IdentityModel.Protocols.xml
+D:\ChatBot\ChatBotApplication\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+D:\ChatBot\ChatBotApplication\bin\Microsoft.IdentityModel.Tokens.xml
+D:\ChatBot\ChatBotApplication\bin\Microsoft.Rest.ClientRuntime.xml
+D:\ChatBot\ChatBotApplication\bin\Microsoft.WindowsAzure.Configuration.xml
+D:\ChatBot\ChatBotApplication\bin\Microsoft.WindowsAzure.Storage.pdb
+D:\ChatBot\ChatBotApplication\bin\Microsoft.WindowsAzure.Storage.xml
+D:\ChatBot\ChatBotApplication\bin\Newtonsoft.Json.xml
+D:\ChatBot\ChatBotApplication\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\ChatBot\ChatBotApplication\bin\System.Net.Http.Formatting.xml
+D:\ChatBot\ChatBotApplication\bin\System.Spatial.xml
+D:\ChatBot\ChatBotApplication\bin\System.Web.Http.xml
+D:\ChatBot\ChatBotApplication\bin\System.Web.Http.Cors.xml
+D:\ChatBot\ChatBotApplication\bin\System.Web.Http.WebHost.xml
+D:\ChatBot\ChatBotApplication\bin\ar\Microsoft.Bot.Builder.resources.dll
+D:\ChatBot\ChatBotApplication\bin\cs\Microsoft.Bot.Builder.resources.dll
+D:\ChatBot\ChatBotApplication\bin\de-dE\Microsoft.Bot.Builder.resources.dll
+D:\ChatBot\ChatBotApplication\bin\el\Microsoft.Bot.Builder.resources.dll
+D:\ChatBot\ChatBotApplication\bin\en\Microsoft.Bot.Builder.resources.dll
+D:\ChatBot\ChatBotApplication\bin\es\Microsoft.Bot.Builder.resources.dll
+D:\ChatBot\ChatBotApplication\bin\fa\Microsoft.Bot.Builder.resources.dll
+D:\ChatBot\ChatBotApplication\bin\fr\Microsoft.Bot.Builder.resources.dll
+D:\ChatBot\ChatBotApplication\bin\it\Microsoft.Bot.Builder.resources.dll
+D:\ChatBot\ChatBotApplication\bin\ja\Microsoft.Bot.Builder.resources.dll
+D:\ChatBot\ChatBotApplication\bin\nl\Microsoft.Bot.Builder.resources.dll
+D:\ChatBot\ChatBotApplication\bin\pt-BR\Microsoft.Bot.Builder.resources.dll
+D:\ChatBot\ChatBotApplication\bin\ru\Microsoft.Bot.Builder.resources.dll
+D:\ChatBot\ChatBotApplication\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+D:\ChatBot\ChatBotApplication\bin\de\Microsoft.Data.Edm.resources.dll
+D:\ChatBot\ChatBotApplication\bin\es\Microsoft.Data.Edm.resources.dll
+D:\ChatBot\ChatBotApplication\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\ChatBot\ChatBotApplication\bin\it\Microsoft.Data.Edm.resources.dll
+D:\ChatBot\ChatBotApplication\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\ChatBot\ChatBotApplication\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\ChatBot\ChatBotApplication\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\ChatBot\ChatBotApplication\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\ChatBot\ChatBotApplication\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\ChatBot\ChatBotApplication\bin\de\Microsoft.Data.OData.resources.dll
+D:\ChatBot\ChatBotApplication\bin\es\Microsoft.Data.OData.resources.dll
+D:\ChatBot\ChatBotApplication\bin\fr\Microsoft.Data.OData.resources.dll
+D:\ChatBot\ChatBotApplication\bin\it\Microsoft.Data.OData.resources.dll
+D:\ChatBot\ChatBotApplication\bin\ja\Microsoft.Data.OData.resources.dll
+D:\ChatBot\ChatBotApplication\bin\ko\Microsoft.Data.OData.resources.dll
+D:\ChatBot\ChatBotApplication\bin\ru\Microsoft.Data.OData.resources.dll
+D:\ChatBot\ChatBotApplication\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\ChatBot\ChatBotApplication\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\ChatBot\ChatBotApplication\bin\de\Microsoft.Data.Services.Client.resources.dll
+D:\ChatBot\ChatBotApplication\bin\es\Microsoft.Data.Services.Client.resources.dll
+D:\ChatBot\ChatBotApplication\bin\fr\Microsoft.Data.Services.Client.resources.dll
+D:\ChatBot\ChatBotApplication\bin\it\Microsoft.Data.Services.Client.resources.dll
+D:\ChatBot\ChatBotApplication\bin\ja\Microsoft.Data.Services.Client.resources.dll
+D:\ChatBot\ChatBotApplication\bin\ko\Microsoft.Data.Services.Client.resources.dll
+D:\ChatBot\ChatBotApplication\bin\ru\Microsoft.Data.Services.Client.resources.dll
+D:\ChatBot\ChatBotApplication\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\ChatBot\ChatBotApplication\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\ChatBot\ChatBotApplication\bin\de\System.Spatial.resources.dll
+D:\ChatBot\ChatBotApplication\bin\es\System.Spatial.resources.dll
+D:\ChatBot\ChatBotApplication\bin\fr\System.Spatial.resources.dll
+D:\ChatBot\ChatBotApplication\bin\it\System.Spatial.resources.dll
+D:\ChatBot\ChatBotApplication\bin\ja\System.Spatial.resources.dll
+D:\ChatBot\ChatBotApplication\bin\ko\System.Spatial.resources.dll
+D:\ChatBot\ChatBotApplication\bin\ru\System.Spatial.resources.dll
+D:\ChatBot\ChatBotApplication\bin\zh-Hans\System.Spatial.resources.dll
+D:\ChatBot\ChatBotApplication\bin\zh-Hant\System.Spatial.resources.dll
+D:\ChatBot\ChatBotApplication\obj\Debug\ChatBotApplication.csprojResolveAssemblyReference.cache
+D:\ChatBot\ChatBotApplication\obj\Debug\ChatBotApplication.dll
+D:\ChatBot\ChatBotApplication\obj\Debug\ChatBotApplication.pdb

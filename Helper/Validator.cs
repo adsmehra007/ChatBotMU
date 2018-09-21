@@ -1,0 +1,124 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Globalization;
+using System.Linq;
+using System.Text.RegularExpressions;
+using System.Web;
+
+namespace ChatBotApplication.Helper
+{
+    public class Validator
+    {
+        /// <summary>
+        /// Check date is in MM/DD/YYYY format
+        /// </summary>
+        /// <param name="date"></param>
+        /// <returns></returns>
+        public static bool checkDateFormat(string date)
+        {
+
+            try
+            {
+                DateTime Test;
+                if (DateTime.TryParseExact(date, "MM/dd/yyyy", null, DateTimeStyles.None, out Test) == true)
+                    return true;
+
+            }
+            catch (Exception ex)
+            {
+            }
+            return false;
+        }
+
+
+        public static string checkDayGreeting()
+        {
+            try
+            {
+                //   var systemTime = DateTime.Now.TimeOfDay;
+                var systemTime = Convert.ToDateTime(DateTime.Now.ToString("HH:mm")).TimeOfDay;
+                if (systemTime.Hours < 12)
+                {
+                    return "Good Morning";
+                }
+                else if (systemTime.Hours < 17||systemTime.Hours==12)
+                {
+                    return "Good AfterNoon";
+                }
+                else
+                {
+                    return "Good Evening";
+                }
+            }
+            catch (Exception ex)
+            {
+                return "Error";
+
+            }
+        }
+
+        public static string getAgentName()
+
+        {
+            string randomAgentName = string.Empty;
+            try
+            {
+                Random random = new Random();
+                List<string> agentNames = new List<string>();
+                string[] lstNames = ConfigurationManager.AppSettings["ChatBot.Agent.Names"].Split(':');
+                agentNames.AddRange(lstNames);
+                int namePos = random.Next(agentNames.Count);
+                randomAgentName = (string)lstNames[namePos];
+            }
+            catch (Exception ex)
+            {
+
+
+            }
+            return randomAgentName;
+        }
+
+        public static bool sentenceComparison(string s1, string s2)
+        {
+            bool stringEquals = false;
+            try
+            {
+                string normalized1 = Regex.Replace(s1, @"\s", "");
+                string normalized2 = Regex.Replace(s2, @"\s", "");
+                normalized1 = Regex.Replace(normalized1, @"[^0-9a-zA-Z]+", "");
+                normalized2 = Regex.Replace(normalized2, @"[^0-9a-zA-Z]+", "");
+                //Regex.Replace(Your String, @"[^0-9a-zA-Z:,]+", "") if you do not want to remove : and , use this and add as many you want
+                stringEquals = String.Equals(
+                    normalized1,
+                    normalized2,
+                    StringComparison.OrdinalIgnoreCase);
+            }
+            catch (Exception)
+            {
+
+            }
+            return stringEquals;
+        }
+        public static bool isPhoneNumberValid(string phoneNumber)
+        {
+            bool isValid = false;
+            try
+            {
+                const string matchPattern = @"\(?\d{3}\)?-? *\d{3}-? *-?\d{4}";
+                Regex regx = new Regex(matchPattern, RegexOptions.Compiled | RegexOptions.IgnoreCase);
+                Match match = regx.Match(phoneNumber);
+                if (match.Success)
+                {
+                    isValid = true;
+                }
+            }
+            catch (Exception ex)
+            {
+
+
+            }
+            return isValid;
+        }
+    }
+}
