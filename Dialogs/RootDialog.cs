@@ -265,7 +265,7 @@ namespace ChatBotApplication.Dialogs
                     questionResponded = true;
                 }
             }
-            else if (state == "options")
+            else if (state == "options"||isOption==true)
             {
                 string keyName = "Options.option" + input;
                 var keyVal = ConfigurationManager.AppSettings[keyName];
