@@ -160,7 +160,7 @@ namespace ChatBotApplication.Dialogs
             else if (state == "phone")
             {
                 if (Validator.isPhoneNumberValid(input))
-                {
+                {  WebApiApplication.getPatPhone = bR.FilteredPatList;
                     bR = Validator.BotAPICall("SearchPatient", input,6, responseToken, WebApiApplication.getPatDOB);
                     //bR = pC.SearchPatient(input, 6, responseToken, WebApiApplication.getPatDOB);
                     if (WebApiApplication.getPatPhone.Count == 1)
@@ -194,7 +194,7 @@ namespace ChatBotApplication.Dialogs
             else if (state == "zip")
             {
                 bR = Validator.BotAPICall("SearchPatient", input, 5, responseToken, WebApiApplication.getPatZIP);
-
+ WebApiApplication.getPatZip = bR.FilteredPatList;
                 //bR = pC.SearchPatient(input, 5, responseToken, WebApiApplication.getPatZIP);
                 if (WebApiApplication.getPatZIP.Count == 1)
                 {
@@ -219,7 +219,9 @@ namespace ChatBotApplication.Dialogs
             }
             else if (state == "ssn")
             {
+            
                 bR = Validator.BotAPICall("SearchPatient", input, 4, responseToken, WebApiApplication.getPatDOB);
+                WebApiApplication.getPatSSN = bR.FilteredPatList;
 
                 //bR = pC.SearchPatient(input, 4, responseToken, WebApiApplication.getPatDOB);
                 if (WebApiApplication.getPatSSN.Count == 1)
