@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading.Tasks;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Connector;
@@ -108,14 +108,16 @@ namespace ChatBotApplication.Dialogs
                 if (Validator.checkDateFormat(input))
                 {
                     bR = Validator.BotAPICall("SearchPatient", input, 3, responseToken, WebApiApplication.getPatLastName);
-       WebApiApplication.getPatDOB = bR.FilteredPatList;
+                    WebApiApplication.getPatDOB = bR.FilteredPatList;
+
                     //bR = pC.SearchPatient(input, 3, responseToken, WebApiApplication.getPatLastName);
                     if (bR.status == true)
                     {
-
                         if (WebApiApplication.getPatDOB.Count == 1)
                         {
                             await context.PostAsync($"Thank you for Verifying your Details.");
+                            context.ConversationData.SetValue<string>("state", "");
+
                             //await context.PostAsync($"How can i help you, {Environment.NewLine}{Environment.NewLine}a)Book an appointment{Environment.NewLine}b)Patient Visit History{Environment.NewLine}c)Pay Bills{Environment.NewLine}d)Refill a request{Environment.NewLine}{Environment.NewLine}Please select an Option");
                             //context.ConversationData.SetValue<string>("state", "options");
                         }
@@ -128,7 +130,7 @@ namespace ChatBotApplication.Dialogs
                             {
                                 context.ConversationData.SetValue<string>("state", "phone");
                                 context.ConversationData.SetValue<string>("ResponseToken", bR.RequestToken);
-                                await context.PostAsync($"Please enter  your Phone number");
+                                await context.PostAsync($"Please enter your Phone number");
                             }
                             else if (hasSSN)
                             {
@@ -160,12 +162,16 @@ namespace ChatBotApplication.Dialogs
             else if (state == "phone")
             {
                 if (Validator.isPhoneNumberValid(input))
-                {  WebApiApplication.getPatPhone = bR.FilteredPatList;
+                {
                     bR = Validator.BotAPICall("SearchPatient", input,6, responseToken, WebApiApplication.getPatDOB);
+                    WebApiApplication.getPatPhone = bR.FilteredPatList;
+
                     //bR = pC.SearchPatient(input, 6, responseToken, WebApiApplication.getPatDOB);
                     if (WebApiApplication.getPatPhone.Count == 1)
                     {
                         await context.PostAsync($"Thank you for Verifying your Details.");
+                        context.ConversationData.SetValue<string>("state", "");
+
                         //await context.PostAsync($"How can i help you, {Environment.NewLine}{Environment.NewLine}a)Book an appointment{Environment.NewLine}b)Patient Visit History{Environment.NewLine}c)Pay Bills{Environment.NewLine}d)Refill a request{Environment.NewLine}{Environment.NewLine}Please select an Option");
                         //context.ConversationData.SetValue<string>("state", "options");
                     }
@@ -194,11 +200,14 @@ namespace ChatBotApplication.Dialogs
             else if (state == "zip")
             {
                 bR = Validator.BotAPICall("SearchPatient", input, 5, responseToken, WebApiApplication.getPatZIP);
- WebApiApplication.getPatZip = bR.FilteredPatList;
+                WebApiApplication.getPatZIP = bR.FilteredPatList;
+
                 //bR = pC.SearchPatient(input, 5, responseToken, WebApiApplication.getPatZIP);
                 if (WebApiApplication.getPatZIP.Count == 1)
                 {
                     await context.PostAsync($"Thank you for Verifying your Details.");
+                    context.ConversationData.SetValue<string>("state", "");
+
                     //await context.PostAsync($"How can i help you, {Environment.NewLine}{Environment.NewLine}a)Book an appointment{Environment.NewLine}b)Patient Visit History{Environment.NewLine}c)Pay Bills{Environment.NewLine}d)Refill a request{Environment.NewLine}{Environment.NewLine}Please select an Option");
                     //context.ConversationData.SetValue<string>("state", "options");
                 }
@@ -219,7 +228,6 @@ namespace ChatBotApplication.Dialogs
             }
             else if (state == "ssn")
             {
-            
                 bR = Validator.BotAPICall("SearchPatient", input, 4, responseToken, WebApiApplication.getPatDOB);
                 WebApiApplication.getPatSSN = bR.FilteredPatList;
 
@@ -227,6 +235,8 @@ namespace ChatBotApplication.Dialogs
                 if (WebApiApplication.getPatSSN.Count == 1)
                 {
                     await context.PostAsync($"Thank you for Verifying your Details.");
+                    context.ConversationData.SetValue<string>("state", "");
+
                     //await context.PostAsync($"How can i help you, {Environment.NewLine}{Environment.NewLine}a)Book an appointment{Environment.NewLine}b)Patient Visit History{Environment.NewLine}c)Pay Bills{Environment.NewLine}d)Refill a request{Environment.NewLine}{Environment.NewLine}Please select an Option");
                     //context.ConversationData.SetValue<string>("state", "options");
                 }
@@ -267,7 +277,7 @@ namespace ChatBotApplication.Dialogs
                     questionResponded = true;
                 }
             }
-            else if (state == "options"||isOption==true)
+            else if (state == "options"|| isOption == true)
             {
                 string keyName = "Options.option" + input;
                 var keyVal = ConfigurationManager.AppSettings[keyName];
