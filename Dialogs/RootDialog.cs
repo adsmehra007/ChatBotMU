@@ -108,7 +108,7 @@ namespace ChatBotApplication.Dialogs
                 if (Validator.checkDateFormat(input))
                 {
                     bR = Validator.BotAPICall("SearchPatient", input, 3, responseToken, WebApiApplication.getPatLastName);
-
+       WebApiApplication.getPatDOB = bR.FilteredPatList;
                     //bR = pC.SearchPatient(input, 3, responseToken, WebApiApplication.getPatLastName);
                     if (bR.status == true)
                     {
