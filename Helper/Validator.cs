@@ -78,7 +78,39 @@ namespace ChatBotApplication.Helper
             }
             return randomAgentName;
         }
+  public static int getOptionbyOptionNumber(string option)
+        {
+            int optionSequence = 1;
+            try
+            {
+                foreach (string key in ConfigurationManager.AppSettings.AllKeys)
+                {
+                    try
+                    {
+                        if (key.Contains("Options."))
+                        {
+                            string _value = ConfigurationManager.AppSettings[key].ToString();
+                            if (sentenceComparison(_value.Trim(), option.Trim()))
+                            {
+                                return optionSequence;
+                            }
+                            optionSequence++;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
 
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+
+
+            }
+            return 0;
+        }
         public static bool sentenceComparison(string s1, string s2)
         {
             bool stringEquals = false;
