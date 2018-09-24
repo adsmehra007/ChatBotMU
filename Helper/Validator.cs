@@ -132,6 +132,37 @@ namespace ChatBotApplication.Helper
             }
             return stringEquals;
         }
+        
+             public static BOTResponse BotAPICall(string methodName, string matchParameter, int sequence, string requestToken, List<Patient> patList)
+        {
+            RequestData rD = new RequestData();
+            rD.matchParameter = matchParameter;
+            rD.patList = patList;
+            rD.requestToken = requestToken;
+            rD.sequence = sequence;
+            BOTResponse bR = new BOTResponse();
+            try
+            {
+                var jsonPatList = JsonConvert.SerializeObject(patList);
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri(ConfigurationManager.AppSettings["ChatBot.Service.URL"].ToString());
+                    var result = client.PostAsJsonAsync(methodName, rD).Result;
+                    if (result.IsSuccessStatusCode)
+                    {
+                        var readTask = result.Content.ReadAsAsync<BOTResponse>();
+                        readTask.Wait();
+                        bR= readTask.Result;
+                        
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            return bR;
+        
         public static bool isPhoneNumberValid(string phoneNumber)
         {
             bool isValid = false;
