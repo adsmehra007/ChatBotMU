@@ -373,6 +373,11 @@ namespace ChatBotApplication.Dialogs
                                         await context.PostAsync(botResponse);
                                         context.ConversationData.SetValue<string>(cQuestion.ConversationState.ToLower(), cQuestion.ConversationStateValue.ToLower());
                                     }
+                                       else if (cQuestion.ConversationStateValue == "optionlist")
+                                {
+                                    await context.PostAsync($"I can help you with following things  {Environment.NewLine}{Environment.NewLine}1.Book an appointment{Environment.NewLine}2.Request Refills{Environment.NewLine}3.Update on Lab Orders{Environment.NewLine}4.Pay your bills{Environment.NewLine}5.Contact the Doctor{Environment.NewLine}6.Inquiries about your Medical history{Environment.NewLine}7.Something else{Environment.NewLine}{Environment.NewLine}How can i help you today?");
+                                    context.ConversationData.SetValue<string>("state", "options");
+                                }
                                     else
                                     {
                                         botResponse = cQuestion.Answer;
@@ -421,6 +426,11 @@ namespace ChatBotApplication.Dialogs
                                     botResponse = botResponse.Replace("{greet}", Validator.checkDayGreeting());
                                     await context.PostAsync(botResponse);
                                     context.ConversationData.SetValue<string>(cQuestion.ConversationState.ToLower(), cQuestion.ConversationStateValue.ToLower());
+                                }
+                                   else if (cQuestion.ConversationStateValue == "optionlist")
+                                {
+                                    await context.PostAsync($"I can help you with following things  {Environment.NewLine}{Environment.NewLine}1.Book an appointment{Environment.NewLine}2.Request Refills{Environment.NewLine}3.Update on Lab Orders{Environment.NewLine}4.Pay your bills{Environment.NewLine}5.Contact the Doctor{Environment.NewLine}6.Inquiries about your Medical history{Environment.NewLine}7.Something else{Environment.NewLine}{Environment.NewLine}How can i help you today?");
+                                    context.ConversationData.SetValue<string>("state", "options");
                                 }
                                 else
                                 {
