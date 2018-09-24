@@ -128,7 +128,7 @@ namespace ChatBotApplication.Dialogs
                             {
                                 context.ConversationData.SetValue<string>("state", "phone");
                                 context.ConversationData.SetValue<string>("ResponseToken", bR.RequestToken);
-                                await context.PostAsync($"Please enter the last 4 digits of your Phone number");
+                                await context.PostAsync($"Please enter  your Phone number");
                             }
                             else if (hasSSN)
                             {
