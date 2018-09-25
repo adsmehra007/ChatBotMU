@@ -11,6 +11,7 @@ using System.Web.Http;
 using System.Net.Http;
 using System;
 using System.Configuration;
+using ChatBotApplication.Helper;
 
 namespace ChatBotApplication
 {
@@ -28,6 +29,7 @@ namespace ChatBotApplication
         public static string firstName = "Dear";
         public static string selectedOption = "fulfill the request";
         public static string initState = string.Empty;
+        public static string agentName = "Jane";
 
 
         protected void Application_Start()
@@ -55,6 +57,11 @@ namespace ChatBotApplication
             {
 
 
+            }
+            agentName = Validator.getAgentName();
+            if (string.IsNullOrEmpty(agentName))
+            {
+                agentName = "Jane";
             }
             // getPatData = PatientSearch.GetAllPat();
 
