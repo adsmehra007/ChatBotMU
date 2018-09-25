@@ -1,4 +1,4 @@
-﻿using Microsoft.Bot.Builder.Azure;
+using Microsoft.Bot.Builder.Azure;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Builder.Dialogs.Internals;
 using Autofac;
@@ -8,6 +8,9 @@ using ChatBot.Models;
 using System.Collections.Generic;
 using ChatBot.Business;
 using System.Web.Http;
+using System.Net.Http;
+using System;
+using System.Configuration;
 
 namespace ChatBotApplication
 {
@@ -21,13 +24,39 @@ namespace ChatBotApplication
         public static List<Patient> getPatSSN;
         public static List<Patient> getPatZIP;
         public static List<Patient> getPatPhone;
-
+        public static List<Patient> verifiedPat;
+        public static string firstName = "Dear";
+        public static string selectedOption = "fulfill the request";
+        public static string initState = string.Empty;
 
 
         protected void Application_Start()
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
-           // getPatData = PatientSearch.GetAllPat();
+
+            try
+            {
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri(ConfigurationManager.AppSettings["ChatBot.Service.URL"].ToString());
+                    var responseTask = client.GetAsync("getallpat");
+                    responseTask.Wait();
+                    var result = responseTask.Result;
+                    if (result.IsSuccessStatusCode)
+                    {
+                        var readTask = result.Content.ReadAsAsync<List<Patient>>();
+                        readTask.Wait();
+                        getPatData = readTask.Result;
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+
+            }
+            // getPatData = PatientSearch.GetAllPat();
 
 
 
