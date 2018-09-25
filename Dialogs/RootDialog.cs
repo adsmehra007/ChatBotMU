@@ -47,14 +47,51 @@ namespace ChatBotApplication.Dialogs
             {
 
             }
-            if (Validator.getOptionSelected(input) > 0)
             {
-                var optionNo = Validator.getOptionSelected(input);
-                isOption = true;
-            }
-            if (input.Trim() == "1" || input.Trim() == "2" || input.Trim() == "3" || input.Trim() == "4" || input.Trim() == "5" || input.Trim() == "6" || input.Trim() == "7")
-            {
-                isOption = true;
+                if (Validator.getOptionSelected(input) > 0 && (state != "firstname" || state != "lastname" || state != "dob" || state != "phone" || state != "ssn" || state != "zip" || state != "reqdescription" || state != "reqdescriptionresp"))
+                {
+                    var optionNo = Validator.getOptionSelected(input);
+                    isOption = true;
+                }
+                else if (input.Trim() == "1" || input.Trim() == "2" || input.Trim() == "3" || input.Trim() == "4" || input.Trim() == "5" || input.Trim() == "6" || input.Trim() == "7" && (state != "firstname" || state != "lastname" || state != "dob" || state != "phone" || state != "ssn" || state != "zip" || state != "reqdescription" || state != "reqdescriptionresp"))
+                {
+                    isOption = true;
+                }
+                else if (input.Contains("appointment") && (state != "firstname" || state != "lastname" || state != "dob" || state != "phone" || state != "ssn" || state != "zip" || state != "reqdescription" || state != "reqdescriptionresp"))
+                {
+                    input = "1";
+                    isOption = true;
+                }
+                else if (input.Contains("refill") && (state != "firstname" || state != "lastname" || state != "dob" || state != "phone" || state != "ssn" || state != "zip" || state != "reqdescription" || state != "reqdescriptionresp"))
+                {
+                    input = "2";
+                    isOption = true;
+                }
+                else if (input.Contains("lab") && input.Contains("order") && (state != "firstname" || state != "lastname" || state != "dob" || state != "phone" || state != "ssn" || state != "zip" || state != "reqdescription" || state != "reqdescriptionresp"))
+                {
+                    input = "3";
+                    isOption = true;
+                }
+                else if (input.Contains("pay") && input.Contains("bill") && (state != "firstname" || state != "lastname" || state != "dob" || state != "phone" || state != "ssn" || state != "zip" || state != "reqdescription" || state != "reqdescriptionresp"))
+                {
+                    input = "4";
+                    isOption = true;
+                }
+                else if ((input.Contains("contact") || input.Contains("call")|| input.Contains("talk")) && input.Contains("doctor") && (state != "firstname" || state != "lastname" || state != "dob" || state != "phone" || state != "ssn" || state != "zip" || state != "reqdescription" || state != "reqdescriptionresp"))
+                {
+                    input = "5";
+                    isOption = true;
+                }
+                else if (input.Contains("history") && (state != "firstname" || state != "lastname" || state != "dob" || state != "phone" || state != "ssn" || state != "zip" || state != "reqdescription" || state != "reqdescriptionresp"))
+                {
+                    input = "6";
+                    isOption = true;
+                }
+                else if (input.Contains("something") && (state != "firstname" || state != "lastname" || state != "dob" || state != "phone" || state != "ssn" || state != "zip" || state != "reqdescription" || state != "reqdescriptionresp"))
+                {
+                    input = "7";
+                    isOption = true;
+                }
             }
             if (state == "firstname")
             {
@@ -75,7 +112,7 @@ namespace ChatBotApplication.Dialogs
                 questionResponded = true;
                 WebApiApplication.getPatFirstName = bR.FilteredPatList;
             }
-            if (state == "lastname")
+            else if (state == "lastname")
             {
                 //bR = pC.SearchPatient(input, 2, null, WebApiApplication.getPatFirstName);
                 bR = Validator.BotAPICall("SearchPatient", input, 2, responseToken, WebApiApplication.getPatFirstName);
@@ -163,7 +200,7 @@ namespace ChatBotApplication.Dialogs
             {
                 if (Validator.isPhoneNumberValid(input))
                 {
-                    bR = Validator.BotAPICall("SearchPatient", input,6, responseToken, WebApiApplication.getPatDOB);
+                    bR = Validator.BotAPICall("SearchPatient", input, 6, responseToken, WebApiApplication.getPatDOB);
                     WebApiApplication.getPatPhone = bR.FilteredPatList;
 
                     //bR = pC.SearchPatient(input, 6, responseToken, WebApiApplication.getPatDOB);
@@ -263,7 +300,7 @@ namespace ChatBotApplication.Dialogs
             }
             else if (state == "reqdescriptionresp")
             {
-                if (input=="no")
+                if (input == "no")
                 {
                     context.ConversationData.SetValue<string>("state", "");
                     await context.PostAsync($"My apologies I wasn't of any help.");
@@ -277,7 +314,7 @@ namespace ChatBotApplication.Dialogs
                     questionResponded = true;
                 }
             }
-            else if (state == "options"|| isOption == true)
+            else if (state == "options" || isOption == true)
             {
                 string keyName = "Options.option" + input;
                 var keyVal = ConfigurationManager.AppSettings[keyName];
@@ -294,7 +331,7 @@ namespace ChatBotApplication.Dialogs
 
                     }
                 }
-                if (input.ToLower() == "1" || Validator.sentenceComparison(keyVal, input) ==true)
+                if (input.ToLower() == "1" || Validator.sentenceComparison(keyVal, input) == true)
                 {
                     await context.PostAsync($"You chose to Book an Appointment.");
                     context.ConversationData.SetValue<string>("state", "firstname");
@@ -318,7 +355,7 @@ namespace ChatBotApplication.Dialogs
 
                     questionResponded = true;
                 }
-                else if (input.ToLower() == "4"|| Validator.sentenceComparison(keyVal, input) == true)
+                else if (input.ToLower() == "4" || Validator.sentenceComparison(keyVal, input) == true)
                 {
                     await context.PostAsync($"You chose to pay your bills.");
                     context.ConversationData.SetValue<string>("state", "firstname");
@@ -326,7 +363,7 @@ namespace ChatBotApplication.Dialogs
 
                     questionResponded = true;
                 }
-                else if (input.ToLower() == "5"|| Validator.sentenceComparison(keyVal, input) == true)
+                else if (input.ToLower() == "5" || Validator.sentenceComparison(keyVal, input) == true)
                 {
                     await context.PostAsync($"You chose to contact the Doctor.");
                     context.ConversationData.SetValue<string>("state", "firstname");
@@ -334,7 +371,7 @@ namespace ChatBotApplication.Dialogs
 
                     questionResponded = true;
                 }
-                else if (input.ToLower() == "6"|| Validator.sentenceComparison(keyVal, input) == true)
+                else if (input.ToLower() == "6" || Validator.sentenceComparison(keyVal, input) == true)
                 {
                     await context.PostAsync($"You chose to inquire about your Medical History.");
                     context.ConversationData.SetValue<string>("state", "firstname");
@@ -373,11 +410,11 @@ namespace ChatBotApplication.Dialogs
                                         await context.PostAsync(botResponse);
                                         context.ConversationData.SetValue<string>(cQuestion.ConversationState.ToLower(), cQuestion.ConversationStateValue.ToLower());
                                     }
-                                       else if (cQuestion.ConversationStateValue == "optionlist")
-                                {
-                                    await context.PostAsync($"I can help you with following things  {Environment.NewLine}{Environment.NewLine}1.Book an appointment{Environment.NewLine}2.Request Refills{Environment.NewLine}3.Update on Lab Orders{Environment.NewLine}4.Pay your bills{Environment.NewLine}5.Contact the Doctor{Environment.NewLine}6.Inquiries about your Medical history{Environment.NewLine}7.Something else{Environment.NewLine}{Environment.NewLine}How can i help you today?");
-                                    context.ConversationData.SetValue<string>("state", "options");
-                                }
+                                    else if (cQuestion.ConversationStateValue == "optionlist")
+                                    {
+                                        await context.PostAsync($"I can help you with following things  {Environment.NewLine}{Environment.NewLine} 1.Book an appointment{Environment.NewLine} 2.Request Refills{Environment.NewLine} 3.Update on Lab Orders{Environment.NewLine} 4.Pay your bills{Environment.NewLine} 5.Contact the Doctor{Environment.NewLine} 6.Inquiries about your Medical history{Environment.NewLine}  7.Something else{Environment.NewLine}{Environment.NewLine}How can i help you today?");
+                                        context.ConversationData.SetValue<string>("state", "options");
+                                    }
                                     else
                                     {
                                         botResponse = cQuestion.Answer;
@@ -427,9 +464,9 @@ namespace ChatBotApplication.Dialogs
                                     await context.PostAsync(botResponse);
                                     context.ConversationData.SetValue<string>(cQuestion.ConversationState.ToLower(), cQuestion.ConversationStateValue.ToLower());
                                 }
-                                   else if (cQuestion.ConversationStateValue == "optionlist")
+                                else if (cQuestion.ConversationStateValue == "optionlist")
                                 {
-                                    await context.PostAsync($"I can help you with following things  {Environment.NewLine}{Environment.NewLine}1.Book an appointment{Environment.NewLine}2.Request Refills{Environment.NewLine}3.Update on Lab Orders{Environment.NewLine}4.Pay your bills{Environment.NewLine}5.Contact the Doctor{Environment.NewLine}6.Inquiries about your Medical history{Environment.NewLine}7.Something else{Environment.NewLine}{Environment.NewLine}How can i help you today?");
+                                    await context.PostAsync($"I can help you with following things  {Environment.NewLine}{Environment.NewLine} 1.Book an appointment{Environment.NewLine} 2.Request Refills{Environment.NewLine} 3.Update on Lab Orders{Environment.NewLine} 4.Pay your bills{Environment.NewLine} 5.Contact the Doctor{Environment.NewLine} 6.Inquiries about your Medical history{Environment.NewLine}  7.Something else{Environment.NewLine}{Environment.NewLine}How can i help you today?");
                                     context.ConversationData.SetValue<string>("state", "options");
                                 }
                                 else
