@@ -361,97 +361,158 @@ namespace ChatBotApplication.Dialogs
                     await context.PostAsync($"Sure, I can help you booking an appointment.");
                     WebApiApplication.selectedOption = "book an appointment";
 
-                    if (WebApiApplication.verifiedPat.Count > 0)
+                    try
                     {
-                        await context.PostAsync($"Let us try & " + WebApiApplication.selectedOption + " for you.");
-                        context.ConversationData.SetValue<string>("state", "");
+                        if (WebApiApplication.verifiedPat.Count > 0)
+                        {
+                            await context.PostAsync($"Let us try & " + WebApiApplication.selectedOption + " for you.");
+                            context.ConversationData.SetValue<string>("state", "");
+                        }
+                        else
+                        {
+                            await context.PostAsync($"Sure, I can help you booking an appointment.");
+                            context.ConversationData.SetValue<string>("state", "firstname");
+                            await context.PostAsync($"Can I know your first name please ?");
+                        }
                     }
-                    else
+                    catch (Exception)
                     {
+
                         await context.PostAsync($"Sure, I can help you booking an appointment.");
                         context.ConversationData.SetValue<string>("state", "firstname");
                         await context.PostAsync($"Can I know your first name please ?");
                     }
+                
                     questionResponded = true;
                 }
                 else if (input.ToLower() == "2" || Validator.sentenceComparison(keyVal, input) == true)
                 {
                     await context.PostAsync($"Yeah ! Sure i can help you with Request Refills.");
                     WebApiApplication.selectedOption = "request refills";
-                    if (WebApiApplication.verifiedPat.Count > 0)
+                    try
                     {
-                        await context.PostAsync($"Let us try & " + WebApiApplication.selectedOption + " for you.");
-                        context.ConversationData.SetValue<string>("state", "");
+                        if (WebApiApplication.verifiedPat.Count > 0)
+                        {
+                            await context.PostAsync($"Let us try & " + WebApiApplication.selectedOption + " for you.");
+                            context.ConversationData.SetValue<string>("state", "");
+                        }
+                        else
+                        {
+                            context.ConversationData.SetValue<string>("state", "firstname");
+                            await context.PostAsync($"Can I know your first name please ?");
+                        }
                     }
-                    else
+                    catch (Exception)
                     {
+
                         context.ConversationData.SetValue<string>("state", "firstname");
                         await context.PostAsync($"Can I know your first name please ?");
                     }
+                  
                     questionResponded = true;
                 }
                 else if (input.ToLower() == "3" || Validator.sentenceComparison(keyVal, input) == true)
                 {
                     await context.PostAsync($"Sure, I can help you to get an update on Lab Orders.");
                     WebApiApplication.selectedOption = "get an update on lab orders";
-                    if (WebApiApplication.verifiedPat.Count > 0)
+                    try
                     {
-                        await context.PostAsync($"Let us try & " + WebApiApplication.selectedOption + " for you.");
-                        context.ConversationData.SetValue<string>("state", "");
+                        if (WebApiApplication.verifiedPat.Count > 0)
+                        {
+                            await context.PostAsync($"Let us try & " + WebApiApplication.selectedOption + " for you.");
+                            context.ConversationData.SetValue<string>("state", "");
+                        }
+                        else
+                        {
+                            context.ConversationData.SetValue<string>("state", "firstname");
+                            await context.PostAsync($"Can I know your first name please ?");
+                        }
                     }
-                    else
+                    catch (Exception)
                     {
                         context.ConversationData.SetValue<string>("state", "firstname");
                         await context.PostAsync($"Can I know your first name please ?");
+
                     }
+                   
                     questionResponded = true;
                 }
                 else if (input.ToLower() == "4" || Validator.sentenceComparison(keyVal, input) == true)
                 {
                     await context.PostAsync($"Okie dokie, let me help you pay your bills.");
                     WebApiApplication.selectedOption = "get an update on lab orders";
-                    if (WebApiApplication.verifiedPat.Count > 0)
+                    try
                     {
-                        await context.PostAsync($"Let us try & " + WebApiApplication.selectedOption + " for you.");
-                        context.ConversationData.SetValue<string>("state", "");
+                        if (WebApiApplication.verifiedPat.Count > 0)
+                        {
+                            await context.PostAsync($"Let us try & " + WebApiApplication.selectedOption + " for you.");
+                            context.ConversationData.SetValue<string>("state", "");
+                        }
+                        else
+                        {
+                            context.ConversationData.SetValue<string>("state", "firstname");
+                            await context.PostAsync($"Can I please know your first name ?");
+                        }
                     }
-                    else
+                    catch (Exception)
                     {
+
                         context.ConversationData.SetValue<string>("state", "firstname");
                         await context.PostAsync($"Can I please know your first name ?");
                     }
+                  
                     questionResponded = true;
                 }
                 else if (input.ToLower() == "5" || Validator.sentenceComparison(keyVal, input) == true)
                 {
                     await context.PostAsync($"So, you want to contact the Doctor.");
                     WebApiApplication.selectedOption = "contact the doctor";
-                    if (WebApiApplication.verifiedPat.Count > 0)
+                    try
                     {
-                        await context.PostAsync($"Let us try & " + WebApiApplication.selectedOption + " for you.");
-                        context.ConversationData.SetValue<string>("state", "");
+                        if (WebApiApplication.verifiedPat.Count > 0)
+                        {
+                            await context.PostAsync($"Let us try & " + WebApiApplication.selectedOption + " for you.");
+                            context.ConversationData.SetValue<string>("state", "");
+                        }
+                        else
+                        {
+                            context.ConversationData.SetValue<string>("state", "firstname");
+                            await context.PostAsync($"Can I know your first name please ?");
+                        }
                     }
-                    else
+                    catch (Exception)
                     {
+
                         context.ConversationData.SetValue<string>("state", "firstname");
                         await context.PostAsync($"Can I know your first name please ?");
                     }
+                   
                     questionResponded = true;
                 }
                 else if (input.ToLower() == "6" || Validator.sentenceComparison(keyVal, input) == true)
                 {
                     await context.PostAsync($"Sure,i can help you to know about your Medical History.");
                     WebApiApplication.selectedOption = "get your medical history";
-                    if (WebApiApplication.verifiedPat.Count > 0)
+                    try
                     {
-                        await context.PostAsync($"Let us try & " + WebApiApplication.selectedOption + " for you.");
-                        context.ConversationData.SetValue<string>("state", "");
+                        if (WebApiApplication.verifiedPat.Count > 0)
+                        {
+                            await context.PostAsync($"Let us try & " + WebApiApplication.selectedOption + " for you.");
+                            context.ConversationData.SetValue<string>("state", "");
+                        }
+                        else
+                        {
+                            context.ConversationData.SetValue<string>("state", "firstname");
+                            await context.PostAsync($"Can I know your first name please ?");
+                        }
                     }
-                    else
+                    catch (Exception)
                     {
+
                         context.ConversationData.SetValue<string>("state", "firstname");
                         await context.PostAsync($"Can I know your first name please ?");
                     }
+                   
                     questionResponded = true;
                 }
                 else if (input.ToLower() == "7" || Validator.sentenceComparison(keyVal, input) == true)
