@@ -1,4 +1,4 @@
-﻿using System.Net;
+using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
@@ -16,12 +16,15 @@ namespace ChatBotApplication
     [BotAuthentication]
     public class MessagesController : ApiController
     {
+
         /// <summary>
         /// POST: api/Messages
         /// Receive a message from a user and reply to it
         /// </summary>
         public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
         {
+            activity.From.Name = WebApiApplication.agentName;
+
             if (activity.GetActivityType() == ActivityTypes.Message)
             {
                 await Conversation.SendAsync(activity, () => new Dialogs.RootDialog());
@@ -72,11 +75,12 @@ namespace ChatBotApplication
             }
             else if (message.Type == ActivityTypes.ConversationUpdate)
             {
+                WebApiApplication.verifiedPat = new List<Patient>();
                 if (message.MembersAdded.Any(o => o.Id == message.Recipient.Id))
                 {
                     ConnectorClient connector = new ConnectorClient(new Uri(message.ServiceUrl));
                     var greeting = Validator.checkDayGreeting();
-                    var agentName = Validator.getAgentName();
+                    var agentName = WebApiApplication.agentName;
                     if (string.IsNullOrEmpty(agentName))
                     {
                         agentName = "Cortana";
@@ -84,10 +88,22 @@ namespace ChatBotApplication
 
                     if (greeting!="Error")
                     {
-                        Activity reply = message.CreateReply("Hello I am "+agentName+ ". "+ greeting+", How may I help you today ?");
-                        connector.Conversations.ReplyToActivityAsync(reply);
+                        string msg = greeting + ". Welcome to MedUSA. My name is " + agentName + ".";
+                        Activity reply = message.CreateReply(msg);
+                        //connector.Conversations.ReplyToActivityAsync(reply);
+                        string options = Validator.getOptions();
+                        string msg2 = "I can help with,";
+                        msg2 += $"\n"+ options + $"\n" + "How can I help you today?";
+                        reply.Text = msg;
+                        reply.From.Name = WebApiApplication.agentName;
+
+                        Activity reply2 = message.CreateReply(msg2);
+                        reply2.From.Name = WebApiApplication.agentName;
+
+                        connector.Conversations.ReplyToActivity(reply);
+                        connector.Conversations.ReplyToActivity(reply2);
                     }
-                    
+
                 }
             }
             else if (message.Type == ActivityTypes.ContactRelationUpdate)
