@@ -218,7 +218,8 @@ namespace ChatBotApplication.Dialogs
                     else
                     {
                         context.ConversationData.SetValue<string>("state", "");
-                        await context.PostAsync($"" + bR.ResponseMessage);
+                        var responseMessage = bR.ResponseMessage.Replace("{phone}",input);
+                        await context.PostAsync($"" + responseMessage);
                     }
                 }
                 else
