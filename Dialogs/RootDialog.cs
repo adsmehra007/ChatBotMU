@@ -255,7 +255,8 @@ namespace ChatBotApplication.Dialogs
                 else
                 {
                     context.ConversationData.SetValue<string>("state", "zip");
-                    await context.PostAsync($"" + bR.ResponseMessage);
+                    var responseMessage = bR.ResponseMessage.Replace("{zip}", input);
+                    await context.PostAsync($"" + responseMessage);
                 }
                 questionResponded = true;
             }
@@ -287,7 +288,9 @@ namespace ChatBotApplication.Dialogs
                     else
                     {
                         context.ConversationData.SetValue<string>("state", "ssn");
-                        await context.PostAsync($"" + bR.ResponseMessage);
+                        var responseMessage = bR.ResponseMessage.Replace("{ssn}", input);
+                        await context.PostAsync($"" + responseMessage);
+                        //await context.PostAsync($"" + bR.ResponseMessage);
                     }
                 }
                 else
