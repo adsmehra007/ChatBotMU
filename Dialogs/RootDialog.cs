@@ -74,7 +74,7 @@ namespace ChatBotApplication.Dialogs
                     input = "4";
                     isOption = true;
                 }
-                else if ((input.Contains("contact") || input.Contains("call")|| input.Contains("talk")) && input.Contains("doctor") && (state != "firstname" || state != "lastname" || state != "dob" || state != "phone" || state != "ssn" || state != "zip" || state != "reqdescription" || state != "reqdescriptionresp"))
+                else if ((input.Contains("contact") || input.Contains("call") || input.Contains("talk")) && input.Contains("doctor") && (state != "firstname" || state != "lastname" || state != "dob" || state != "phone" || state != "ssn" || state != "zip" || state != "reqdescription" || state != "reqdescriptionresp"))
                 {
                     input = "5";
                     isOption = true;
@@ -148,7 +148,7 @@ namespace ChatBotApplication.Dialogs
                         if (WebApiApplication.getPatDOB.Count == 1)
                         {
                             WebApiApplication.firstName = WebApiApplication.getPatDOB[0].FirstName.Trim();
-                            await context.PostAsync($"Thanks for verifying your details "+ WebApiApplication.firstName + ". I can now try & "+WebApiApplication.selectedOption+" for you.");
+                            await context.PostAsync($"Thanks for verifying your details " + WebApiApplication.firstName + ". I can now try & " + WebApiApplication.selectedOption + " for you.");
                             context.ConversationData.SetValue<string>("state", "");
                             WebApiApplication.verifiedPat = WebApiApplication.getPatDOB;
                             //await context.PostAsync($"How can i help you, {Environment.NewLine}{Environment.NewLine}a)Book an appointment{Environment.NewLine}b)Patient Visit History{Environment.NewLine}c)Pay Bills{Environment.NewLine}d)Refill a request{Environment.NewLine}{Environment.NewLine}Please select an Option");
@@ -163,7 +163,7 @@ namespace ChatBotApplication.Dialogs
                             {
                                 context.ConversationData.SetValue<string>("state", "phone");
                                 context.ConversationData.SetValue<string>("ResponseToken", bR.RequestToken);
-                                await context.PostAsync($"Please enter your Phone number");
+                                await context.PostAsync($"Please enter last 4 digits of your Phone number");
                             }
                             else if (hasSSN)
                             {
@@ -193,7 +193,8 @@ namespace ChatBotApplication.Dialogs
             }
             else if (state == "phone")
             {
-                if (Validator.isPhoneNumberValid(input))
+                input = Validator.extractNumber(input);
+                if (input != "invalid")
                 {
                     bR = Validator.BotAPICall("SearchPatient", input, 6, responseToken, WebApiApplication.getPatDOB);
                     WebApiApplication.getPatPhone = bR.FilteredPatList;
@@ -223,7 +224,7 @@ namespace ChatBotApplication.Dialogs
                 else
                 {
                     context.ConversationData.SetValue<string>("state", "phone");
-                    await context.PostAsync($"Please enter valid Phone format, (xxxxxxxxxx)");
+                    await context.PostAsync($"Sorry doesn't seems like last four digits to me, Please try again (xxxx)");
                 }
                 questionResponded = true;
                 WebApiApplication.getPatPhone = bR.FilteredPatList;
@@ -259,34 +260,42 @@ namespace ChatBotApplication.Dialogs
             }
             else if (state == "ssn")
             {
-                bR = Validator.BotAPICall("SearchPatient", input, 4, responseToken, WebApiApplication.getPatDOB);
-                WebApiApplication.getPatSSN = bR.FilteredPatList;
-
-                //bR = pC.SearchPatient(input, 4, responseToken, WebApiApplication.getPatDOB);
-                if (WebApiApplication.getPatSSN.Count == 1)
+                input = Validator.extractNumber(input);
+                if (input != "invalid")
                 {
-                    WebApiApplication.firstName = WebApiApplication.getPatSSN[0].FirstName.Trim();
-                    await context.PostAsync($"Thanks for verifying your details " + WebApiApplication.firstName + ". I can now try & " + WebApiApplication.selectedOption + " for you.");
-                    context.ConversationData.SetValue<string>("state", "");
-                    WebApiApplication.verifiedPat = WebApiApplication.getPatSSN;
+                    bR = Validator.BotAPICall("SearchPatient", input, 4, responseToken, WebApiApplication.getPatDOB);
+                    WebApiApplication.getPatSSN = bR.FilteredPatList;
 
-                    //await context.PostAsync($"How can i help you, {Environment.NewLine}{Environment.NewLine}a)Book an appointment{Environment.NewLine}b)Patient Visit History{Environment.NewLine}c)Pay Bills{Environment.NewLine}d)Refill a request{Environment.NewLine}{Environment.NewLine}Please select an Option");
-                    //context.ConversationData.SetValue<string>("state", "options");
-                }
-                else if (bR.status == true)
-                {
-                    context.ConversationData.SetValue<string>("state", "zip");
-                    context.ConversationData.SetValue<string>("ResponseToken", bR.RequestToken);
-                    await context.PostAsync($"" + bR.ResponseMessage);
+                    //bR = pC.SearchPatient(input, 4, responseToken, WebApiApplication.getPatDOB);
+                    if (WebApiApplication.getPatSSN.Count == 1)
+                    {
+                        WebApiApplication.firstName = WebApiApplication.getPatSSN[0].FirstName.Trim();
+                        await context.PostAsync($"Thanks for verifying your details " + WebApiApplication.firstName + ". I can now try & " + WebApiApplication.selectedOption + " for you.");
+                        context.ConversationData.SetValue<string>("state", "");
+                        WebApiApplication.verifiedPat = WebApiApplication.getPatSSN;
+
+                        //await context.PostAsync($"How can i help you, {Environment.NewLine}{Environment.NewLine}a)Book an appointment{Environment.NewLine}b)Patient Visit History{Environment.NewLine}c)Pay Bills{Environment.NewLine}d)Refill a request{Environment.NewLine}{Environment.NewLine}Please select an Option");
+                        //context.ConversationData.SetValue<string>("state", "options");
+                    }
+                    else if (bR.status == true)
+                    {
+                        context.ConversationData.SetValue<string>("state", "zip");
+                        context.ConversationData.SetValue<string>("ResponseToken", bR.RequestToken);
+                        await context.PostAsync($"" + bR.ResponseMessage);
+                    }
+                    else
+                    {
+                        context.ConversationData.SetValue<string>("state", "ssn");
+                        await context.PostAsync($"" + bR.ResponseMessage);
+                    }
                 }
                 else
                 {
                     context.ConversationData.SetValue<string>("state", "ssn");
-                    await context.PostAsync($"" + bR.ResponseMessage);
+                    await context.PostAsync($"Sorry, this doesn't seems like a valid digits of your SSN, (xxxx)");
                 }
                 questionResponded = true;
                 WebApiApplication.getPatSSN = bR.FilteredPatList;
-
             }
             else if (state == "reqdescription")
             {
@@ -382,7 +391,7 @@ namespace ChatBotApplication.Dialogs
                         context.ConversationData.SetValue<string>("state", "firstname");
                         await context.PostAsync($"Can I know your first name please ?");
                     }
-                
+
                     questionResponded = true;
                 }
                 else if (input.ToLower() == "2" || Validator.sentenceComparison(keyVal, input) == true)
@@ -408,7 +417,7 @@ namespace ChatBotApplication.Dialogs
                         context.ConversationData.SetValue<string>("state", "firstname");
                         await context.PostAsync($"Can I know your first name please ?");
                     }
-                  
+
                     questionResponded = true;
                 }
                 else if (input.ToLower() == "3" || Validator.sentenceComparison(keyVal, input) == true)
@@ -434,7 +443,7 @@ namespace ChatBotApplication.Dialogs
                         await context.PostAsync($"Can I know your first name please ?");
 
                     }
-                   
+
                     questionResponded = true;
                 }
                 else if (input.ToLower() == "4" || Validator.sentenceComparison(keyVal, input) == true)
@@ -460,7 +469,7 @@ namespace ChatBotApplication.Dialogs
                         context.ConversationData.SetValue<string>("state", "firstname");
                         await context.PostAsync($"Can I please know your first name ?");
                     }
-                  
+
                     questionResponded = true;
                 }
                 else if (input.ToLower() == "5" || Validator.sentenceComparison(keyVal, input) == true)
@@ -486,7 +495,7 @@ namespace ChatBotApplication.Dialogs
                         context.ConversationData.SetValue<string>("state", "firstname");
                         await context.PostAsync($"Can I know your first name please ?");
                     }
-                   
+
                     questionResponded = true;
                 }
                 else if (input.ToLower() == "6" || Validator.sentenceComparison(keyVal, input) == true)
@@ -512,7 +521,7 @@ namespace ChatBotApplication.Dialogs
                         context.ConversationData.SetValue<string>("state", "firstname");
                         await context.PostAsync($"Can I know your first name please ?");
                     }
-                   
+
                     questionResponded = true;
                 }
                 else if (input.ToLower() == "7" || Validator.sentenceComparison(keyVal, input) == true)
